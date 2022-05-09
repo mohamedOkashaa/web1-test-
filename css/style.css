@@ -1,0 +1,283 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --main-color: #f25454 !important;
+}
+.nav-item .nav-link  , .icon    {
+    transition: all 0.2s;
+}
+.nav-item:hover a  , .icon:hover {
+    color: var(--main-color) !important;
+}
+.slider .slider-caption h1{
+    font-weight: 700 !important;
+    font-size: 70px !important;
+    max-width: 450px;
+}
+.img-slide1 , .img-slide2 ,.img-slide3 {
+background-size: cover;
+height: 100vh;
+background-position: 100%;
+}
+.carousel-item .img-slide1 {
+background-image: url(../images/slideshow-1.jpg);
+}.carousel-item .img-slide2 {
+background-image: url(../images/slideshow-2.jpg);
+}
+.carousel-item .img-slide3 {
+ background-image: url(../images/slideshow-3.jpg);
+}
+.header-icon{
+top: 25%;
+left: 0%;
+ z-index: 999999;
+ background-color: #1f2528;
+ width: 40px;
+ height: 45px;
+ transition: all 0.5;
+}
+.header-icon:hover{
+    background-color: #434343;
+}
+.carousel-control-prev , .carousel-control-next{
+    width: 58px;
+    height: 58px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.carousel-control-next{
+    top: 41%;
+}
+.layer-btn-caption{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.layer-btn-caption .layer{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 0%;
+    transition: all 1s;  
+}
+.parent-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 99;
+    transition: all 1s;
+}
+.layer-btn-caption:hover .layer{
+    width: 100%;
+    background-color: #fff;
+}
+.layer-btn-caption:hover .parent-caption{
+    color: var(--main-color)
+}
+
+/* 2  About Us*/
+
+ .title h2{
+font-size: 70px;
+font-weight: 700;
+opacity: 0.1;
+}
+ .title h3{
+    font-size: 40px;
+    font-weight: 900;
+    transform: translateY(-60px);
+   }
+   .title .line{
+       width: 20px;
+       height: 2px;
+       background-color: black;
+       transform: translatey(-60px);
+       transition: all 1s;
+   }
+
+   .title .caption:hover .line{
+       width: 60px;
+   }
+   .caption-text{
+       max-width: 650px;
+       transform: translatey(-50px);
+   }
+
+   .skills .skill-1 p::before , .skills .skill-2 p::before , .skills .skill-3 p::before , .skills .skill-4 p::before{
+    content: "";
+    width: 100%;
+    height: 7px;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    background :linear-gradient( to left, #eee  20% ,  var(--main-color)  20%);
+}
+
+.skills .skill-2 p::before {
+    background :linear-gradient( to left, #eee  5% ,  var(--main-color) 5%);
+}
+.skills .skill-3 p::before{
+    background :linear-gradient( to left, #eee  15% ,  var(--main-color)  15%);
+}
+.skills .skill-4 p::before{
+    background :linear-gradient( to left, #eee  30% ,  var(--main-color)  30%);
+}
+.skills .skill-1  ,.skills .skill-2  ,.skills .skill-3  ,.skills .skill-4 {
+    height: 25px;
+}
+
+
+/* 3  Our Team*/
+
+.screna{
+    background-color: #f25454a1;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.screna .pic-icon{
+    color: #fff;
+}
+.pic img{
+    transition: all 0.5s;
+}
+
+.pic:hover .screna{
+    opacity: 1;
+}
+.parent-pic h5{
+    transition: all 0.5s;
+}
+.parent-pic:hover h5{
+    color: var(--main-color);
+}
+.pic:hover img{
+    transform: scale(1.2);
+}
+.team-btn .btttnn{
+    border: var(--main-color) solid 1px;
+    background-color: var(--main-color);
+    padding: 15px;
+    width: 150px;
+}
+/* 4 service */
+.service-child h3
+{
+    transition: all .5s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-child:hover h3
+{
+    color: var(--main-color)
+}
+
+.icon-Services{
+    color: var(--main-color);
+}
+
+    /* 5 Client*/
+   .carousel-indicators button{
+       height: 100px !important;
+       width: 100px !important;
+       border-radius: 50%;
+       text-indent: 1 !important;
+       transition: all 0.6s ease-in-out !important;
+   }
+
+   .carousel-indicators button img{
+    height: 100px !important;
+    width: 100px !important;  
+    border-radius: 50%;
+}
+
+.carousel-item{
+    transition: all 0.6s ease-in-out !important;
+}
+
+/* 6 Get In Touch */
+
+.icon-toch{
+    color: var(--main-color);
+
+}
+.parent-col h4{
+    transition: all 0.5s;
+}
+.parent-col:hover h4{
+    color: var(--main-color);
+}
+
+/* 7 */
+
+
+
+.end-icon{
+    color: var(--main-color);
+    opacity: 0.5;
+    transition: all 1s;
+}
+.end-icon:hover{
+    opacity: 1;
+}
+
+footer{
+    background-image: url(../images/dotted-map.png);
+    background-size: 50% 100%;
+    background-color: #222;
+}
+
+   .an-end:hover{
+       color: var(--main-color);
+   }
+    .an-end{
+    color: #b0b0b0;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s;  
+
+   }
+   footer p{
+    color: #b0b0b0;
+    font-size: 15px;
+   }
+   .an2-end{
+       text-decoration: none;
+       color: #b0b0b0 !important;  
+       transition: all 0.5s;  
+   }
+   .an2-end:hover{
+       border-color: var(--main-color) !important;
+       color: var(--main-color) !important;
+   }
+   footer .end{
+       width: 100%;
+       height: auto;
+       background: #1a1a1a;
+    }
+
+    .icons-endpage1{
+        transition: all 0.5s;
+    }
+
+    .icons-endpage1:hover{
+        color: var(--main-color) !important;
+    }
+
+/*  */
+@media screen and (max-width:766px){
+
+    .slider .slider-caption h1{
+        font-size: 40px !important;
+    }
+
+    .maxx{
+    }
+ 
+
+}
+
+
